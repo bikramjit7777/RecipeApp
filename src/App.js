@@ -29,7 +29,7 @@ const App = () => {
     setQuery(search);
     setSearch("");
   };
-
+  console.log(recipes);
   return (
     <div className="App">
       <h1>Recipe App</h1>
@@ -44,6 +44,7 @@ const App = () => {
       </form>
       <div className="recipes">
         {recipes.map((recipee) => (
+          
           <Recipe
             title={recipee.recipe.label}
             calories={recipee.recipe.calories}
